@@ -1,0 +1,8 @@
+node_modules/
+dados/memoria.json
+relatorios/*
+!relatorios/.gitkeep
+.impeccable/mocks/
+.impeccable/questions/
+.impeccable/review/
+*.log

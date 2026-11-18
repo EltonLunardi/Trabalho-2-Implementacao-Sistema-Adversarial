@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relatório · Arena Adversarial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; --bg: #0d1117; --panel: #161b23; --line: #2a3342; --text: #e9edf2; --text-2: #b4bdc9; --muted: #8a95a5; --gold: #e5b94e; --gold-2: #f3d27a; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.6 'Roboto', system-ui, sans-serif; font-variant-numeric: tabular-nums; }
+    ::selection { background: rgba(229, 185, 78, 0.35); }
+    header { position: sticky; top: 0; display: flex; align-items: center; gap: 16px; padding: 12px 24px; background: #141922; border-bottom: 1px solid var(--line); }
+    header a { color: var(--gold-2); text-decoration: none; font-weight: 500; }
+    header span { color: var(--muted); font-size: 13px; }
+    main { max-width: 1180px; margin: 0 auto; padding: 24px 24px 64px; }
+    h1 { font-size: 26px; margin: 8px 0 16px; }
+    h2 { font-size: 18px; margin: 34px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); color: var(--gold-2); font-weight: 500; }
+    p, li { color: var(--text-2); max-width: 75ch; }
+    li { margin: 6px 0; }
+    strong { color: var(--text); }
+    a { color: var(--gold-2); text-underline-offset: 3px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 8px 0 16px; display: block; overflow-x: auto; }
+    th { text-align: left; color: var(--muted); font-weight: 500; font-size: 12.5px; padding: 6px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+    td { padding: 6px 10px; border-bottom: 1px solid #1f2632; vertical-align: top; color: var(--text-2); }
+    em { color: var(--muted); }
+    .err { color: #ffb4ae; }
+  </style>
+</head>
+<body>
+  <header><a href="/">← Voltar à arena</a><span id="file"></span><a id="raw" href="#">Markdown original</a></header>
+  <main id="doc"><p>Carregando…</p></main>
+  <script src="/vendor/marked/marked.umd.js"></script>
+  <script>
+    const f = new URLSearchParams(location.search).get('f') || 'geral.md';
+    const safe = /^[\w.-]+\.md$/.test(f) ? f : 'geral.md';
+    document.getElementById('file').textContent = safe;
+    document.getElementById('raw').href = '/relatorios/' + safe;
+    fetch('/relatorios/' + safe)
+      .then((r) => { if (!r.ok) throw new Error('Relatório não encontrado: ' + safe); return r.text(); })
+      .then((md) => {
+        const html = marked.parse(md, { mangle: false, headerIds: false });
+        const doc = document.getElementById('doc');
+        doc.innerHTML = html;
+        for (const a of doc.querySelectorAll('a[href]')) {
+          const h = a.getAttribute('href');
+          if (/^[\w.-]+\.md$/.test(h)) a.href = 'relatorio.html?f=' + encodeURIComponent(h);
+          else if (/^[\w.-]+\.jsonl$/.test(h)) a.href = '/relatorios/' + h;
+        }
+        document.title = (doc.querySelector('h1')?.textContent || 'Relatório') + ' · Arena Adversarial';
+      })
+      .catch((e) => { document.getElementById('doc').innerHTML = '<p class="err"></p>'; document.querySelector('.err').textContent = e.message + '. Ele é gerado quando uma partida termina.'; });
+  </script>
+</body>
+</html>

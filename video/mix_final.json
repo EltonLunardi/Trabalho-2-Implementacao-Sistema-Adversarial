@@ -1,0 +1,56 @@
+{
+ "voz": "som/voz.wav",
+ "saida": "som/mix_final.wav",
+ "duracao_s": 659.317,
+ "alvo_lufs": -14.0,
+ "alvo_pico_real_dbtp": -1.0,
+ "fala_rms_entrada_dbfs": -15.5,
+ "efeitos": "som/efeitos.wav",
+ "trilha": {
+  "arquivo": "som/trilha_cama.wav",
+  "inicio_s": 0.0,
+  "ganho_db": -10.15,
+  "ajuste_pedido_db": -2.7,
+  "alvo_abaixo_da_fala_db": 20.0,
+  "janelas_fala": 5552,
+  "janelas_vao": 822,
+  "musica_abaixo_da_fala_db": 20.0,
+  "musica_rms_na_fala_dbfs": -39.0,
+  "musica_rms_no_vao_dbfs": -31.4,
+  "ducking_db": 7.6,
+  "ajuste_automatico_db": -2.7
+ },
+ "passadas": [
+  {
+   "etapa": "medida",
+   "pre_db": 0.0,
+   "input_i": "-16.80",
+   "input_tp": "-2.99",
+   "input_lra": "1.60"
+  },
+  {
+   "etapa": "medida com ganho",
+   "pre_db": 2.8,
+   "input_i": "-14.04",
+   "input_tp": "-1.70",
+   "input_lra": "1.50"
+  },
+  {
+   "etapa": "aplicação",
+   "pre_db": 2.8,
+   "teto_bus_dbfs": -1.7,
+   "tipo": "linear",
+   "output_i": "-13.96",
+   "output_tp": "-1.66"
+  }
+ ],
+ "teto_bus_dbfs": -1.7,
+ "ganho_pos_soma_db": 2.84,
+ "fala_rms_saida_estimada_dbfs": -12.66,
+ "final": {
+  "lufs": -14.0,
+  "lra": 1.5,
+  "pico_real_dbtp": -1.6,
+  "ok": true
+ }
+}

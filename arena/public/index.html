@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arena Adversarial · Poker heads-up</title>
+  <meta name="description" content="Dois agentes heurísticos jogam heads-up de Texas Hold'em e se adaptam um ao outro, ao vivo.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111620'/%3E%3Cpath d='M16 6c4 5 9 7.5 9 12a4.6 4.6 0 0 1-7.6 3.4L19 27h-6l1.6-5.6A4.6 4.6 0 0 1 7 18c0-4.5 5-7 9-12z' fill='%23E5B94E'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-play" viewBox="0 0 20 20"><path d="M6 4.5v11l9-5.5z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 20 20"><path d="M6 4h3v12H6zM11 4h3v12h-3z" fill="currentColor"/></symbol>
+    <symbol id="i-step" viewBox="0 0 20 20"><path d="M4 4.5v11l8-5.5zM13 4h3v12h-3z" fill="currentColor"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 20 20"><path d="M10 6.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm7 4.1v-1.8l-2-.5a5.6 5.6 0 0 0-.6-1.4l1-1.8-1.3-1.3-1.8 1a5.6 5.6 0 0 0-1.4-.6L10.9 3H9.1l-.5 2a5.6 5.6 0 0 0-1.4.6l-1.8-1-1.3 1.3 1 1.8a5.6 5.6 0 0 0-.6 1.4l-2 .5v1.8l2 .5c.1.5.3 1 .6 1.4l-1 1.8 1.3 1.3 1.8-1c.4.3.9.5 1.4.6l.5 2h1.8l.5-2c.5-.1 1-.3 1.4-.6l1.8 1 1.3-1.3-1-1.8c.3-.4.5-.9.6-1.4z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 20 20"><path d="M4.5 10.5l3.5 3.5 7.5-8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 20 20"><path d="M10 3l8 14H2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 8v4M10 14.5v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 20 20"><path d="M5 2.5h7l3.5 3.5v11.5h-10.5z M12 2.5V6h3.5M7.5 10h5M7.5 13h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-data" viewBox="0 0 20 20"><path d="M4 5c0-1.4 2.7-2.5 6-2.5s6 1.1 6 2.5-2.7 2.5-6 2.5S4 6.4 4 5zm0 0v10c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V5M4 10c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+    <symbol id="i-spade" viewBox="0 0 32 32"><path d="M16 4c4.5 5.5 10 8.2 10 13.2a5 5 0 0 1-8.3 3.8L19.5 28h-7l1.8-7a5 5 0 0 1-8.3-3.8C6 12.2 11.5 9.5 16 4z" fill="currentColor"/></symbol>
+  </svg>
+
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-mark" aria-hidden="true"><use href="#i-spade"/></svg>
+      <div><b>Arena Adversarial</b><span>Poker heads-up · ESOF Adversarial · Grupo 7</span></div>
+    </div>
+
+    <dl class="matchinfo">
+      <div><dt>Partida</dt><dd id="mi-partida">—</dd></div>
+      <div><dt>Mão</dt><dd id="mi-mao">—</dd></div>
+      <div><dt>Blinds</dt><dd><span id="mi-blinds">—</span> <small id="mi-sobe"></small></dd></div>
+      <div><dt>Placar</dt><dd id="mi-placar">—</dd></div>
+      <div><dt>Σ fichas</dt><dd id="mi-inv" class="inv">—</dd></div>
+    </dl>
+
+    <div class="controls">
+      <span class="conn" id="conn" data-state="off">Conectando…</span>
+      <button class="btn btn-primary" id="btn-play" type="button"><svg aria-hidden="true"><use href="#i-pause"/></svg><span>Pausar</span></button>
+      <button class="btn" id="btn-step" type="button" title="Avança um evento e pausa"><svg aria-hidden="true"><use href="#i-step"/></svg><span>Passo</span></button>
+      <div class="seg" role="radiogroup" aria-label="Velocidade" id="speed">
+        <button type="button" role="radio" data-v="lenta">Lenta</button>
+        <button type="button" role="radio" data-v="normal">Normal</button>
+        <button type="button" role="radio" data-v="rapida">Rápida</button>
+        <button type="button" role="radio" data-v="turbo">Turbo</button>
+      </div>
+      <button class="btn btn-ghost" id="btn-config" type="button" aria-expanded="false" aria-controls="config"><svg aria-hidden="true"><use href="#i-gear"/></svg><span>Configurar</span></button>
+    </div>
+  </header>
+
+  <form id="config" class="config" hidden>
+    <fieldset>
+      <legend>Partidas</legend>
+      <label>Fichas iniciais <input name="stackInicial" type="number" min="100" step="50"></label>
+      <label>Mãos por nível de blind <input name="maosPorNivel" type="number" min="1" max="100"></label>
+      <label>Seed <input name="seed" type="number" min="0"></label>
+      <label class="check"><input name="autoProxima" type="checkbox"> Iniciar a próxima partida automaticamente</label>
+    </fieldset>
+    <fieldset>
+      <legend>Perfis iniciais</legend>
+      <label>Agente A <select name="perfilA"></select></label>
+      <label>Agente B <select name="perfilB"></select></label>
+      <p class="hint">Perfis valem a partir da próxima partida. A memória aprendida é mantida.</p>
+    </fieldset>
+    <fieldset>
+      <legend>Treinador Llama (Ollama local)</legend>
+      <label class="check"><input name="treinadorAtivo" type="checkbox"> Ajustar a política base entre partidas</label>
+      <label>Modelo <input name="modelo" type="text" spellcheck="false"></label>
+      <p class="hint" id="coach-hint"></p>
+    </fieldset>
+    <div class="config-actions">
+      <button class="btn btn-primary" type="submit">Salvar</button>
+      <button class="btn" type="button" id="btn-nova">Recomeçar a partida atual</button>
+      <button class="btn btn-danger" type="button" id="btn-apagar">Apagar memória dos agentes</button>
+    </div>
+  </form>
+
+  <main class="layout">
+    <section class="stage panel" aria-label="Mesa">
+      <div class="felt-wrap">
+        <div class="felt" id="felt">
+          <div class="felt-logo" aria-hidden="true">ARENA ADVERSARIAL</div>
+          <div class="seat seat-top" data-seat="B" id="seat-B"></div>
+          <div class="seat seat-bottom" data-seat="A" id="seat-A"></div>
+          <div class="bet bet-top" id="bet-B"></div>
+          <div class="bet bet-bottom" id="bet-A"></div>
+          <div class="center">
+            <div class="pot" id="pot"><span class="chips" aria-hidden="true"></span><span>Pote <b id="pot-v">0</b></span></div>
+            <div class="board" id="board"></div>
+            <div class="street" id="street"></div>
+          </div>
+          <div class="banner" id="banner" hidden></div>
+        </div>
+      </div>
+      <div class="thoughts">
+        <article class="thought" id="th-A" data-seat="A"></article>
+        <article class="thought" id="th-B" data-seat="B"></article>
+      </div>
+    </section>
+
+    <aside class="feed panel" aria-label="Eventos">
+      <div class="panel-head">
+        <h2>Eventos da partida</h2>
+        <div class="tabs small" role="tablist" id="feed-filter">
+          <button role="tab" data-f="tudo" aria-selected="true">Tudo</button>
+          <button role="tab" data-f="acao">Ações</button>
+          <button role="tab" data-f="pensamento">Decisões</button>
+          <button role="tab" data-f="adaptacao">Adaptações</button>
+        </div>
+      </div>
+      <div class="feed-cols" aria-hidden="true"><span>Mão</span><span>Etapa</span><span></span><span>Registro</span><span>Valor</span></div>
+      <ol class="feed-list" id="feed"></ol>
+    </aside>
+
+    <section class="influence panel" aria-labelledby="inf-title">
+      <div class="panel-head">
+        <div>
+          <h2 id="inf-title">Como as decisões de um agente influenciam o adversário</h2>
+          <p class="sub">Cada ponto é uma mudança de política; cada seta liga a mudança de um agente à reação do outro.</p>
+        </div>
+        <div class="tabs small" role="tablist" id="inf-scope">
+          <button role="tab" data-s="atual" aria-selected="true">Partida atual</button>
+          <button role="tab" data-s="ult3">Últimas 3</button>
+          <button role="tab" data-s="todas">Todas</button>
+        </div>
+      </div>
+      <div class="kpis" id="inf-kpis"></div>
+      <div class="inf-body">
+        <div class="inf-chart" id="inf-chart"></div>
+        <ol class="narrative" id="narrative"></ol>
+      </div>
+    </section>
+
+    <section class="analysis panel" aria-label="Análise">
+      <div class="panel-head">
+        <div class="tabs" role="tablist" id="an-tabs">
+          <button role="tab" data-t="stats" aria-selected="true">Estatísticas</button>
+          <button role="tab" data-t="policy">Política</button>
+          <button role="tab" data-t="model">Leitura do oponente</button>
+          <button role="tab" data-t="chips">Fichas</button>
+          <button role="tab" data-t="learn">Aprendizado entre partidas</button>
+          <button role="tab" data-t="matches">Partidas e relatórios</button>
+          <button role="tab" data-t="coach">Treinador</button>
+        </div>
+      </div>
+      <div class="an-body" id="an-body"></div>
+    </section>
+  </main>
+
+  <script src="/vendor/chart.umd.min.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

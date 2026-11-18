@@ -1,0 +1,1668 @@
+{
+ "trocas": [
+  [
+   [
+    "grupo",
+    "sete"
+   ],
+   "Grupo 7"
+  ],
+  [
+   [
+    "trabalho",
+    "um"
+   ],
+   "Trabalho 1"
+  ],
+  [
+   [
+    "trabalho",
+    "dois"
+   ],
+   "Trabalho 2"
+  ],
+  [
+   [
+    "lhama"
+   ],
+   "Llama"
+  ],
+  [
+   [
+    "mil",
+    "cento",
+    "e",
+    "dezenove"
+   ],
+   "1.119"
+  ]
+ ],
+ "secoes": [
+  {
+   "de": "Dois programas jogaram",
+   "itens": [
+    {
+     "tipo": "numero",
+     "valor": 1119,
+     "x": 0,
+     "y": 0.02,
+     "tam": "display",
+     "cor": "primaria"
+    },
+    {
+     "tipo": "texto",
+     "texto": "mãos de pôquer entre dois agentes de software",
+     "x": 0,
+     "y": 0.24,
+     "w": 0.5,
+     "papel": "corpo",
+     "tam": "h3",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "img",
+     "arquivo": "tela_arena.png",
+     "x": 0.5,
+     "y": 0,
+     "w": 0.5,
+     "h": 0.6
+    },
+    {
+     "tipo": "chip",
+     "texto": "PARTIDA 1 · NÃO SE CONHECEM",
+     "x": 0,
+     "y": 0.42,
+     "em": "Na primeira partida",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "PARTIDA 68 · PREVEEM 7 A 8 DE CADA 10 REAÇÕES",
+     "x": 0,
+     "y": 0.52,
+     "em": "Na sexagésima oitava",
+     "cor": "primaria"
+    },
+    {
+     "tipo": "texto",
+     "texto": "Como as decisões de um agente influenciam o comportamento do adversário nas rodadas seguintes?",
+     "x": 0,
+     "y": 0.68,
+     "w": 1,
+     "em": "como as decisões de um agente influenciam",
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    }
+   ]
+  },
+  {
+   "de": "Somos o Grupo sete de",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Do Trabalho 1 ao Trabalho 2",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Trabalho 1 · análise",
+     "texto": "Modelo estático, modelo dinâmico e ameaças, sobre um cenário escrito à mão.",
+     "x": 0,
+     "y": 0.14,
+     "w": 0.42,
+     "em": "No Trabalho um analisamos",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "seta",
+     "x": 0.44,
+     "y": 0.24,
+     "x2": 0.54,
+     "y2": 0.24,
+     "em": "a proposta virou código",
+     "cor": "texto_suave"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Trabalho 2 · implementação",
+     "texto": "A proposta vira código: dois agentes jogando de verdade.",
+     "x": 0.56,
+     "y": 0.14,
+     "w": 0.44,
+     "em": "a proposta virou código",
+     "borda": "primaria",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "texto",
+     "texto": "1  Dois agentes em conflito, com regras de decisão explícitas",
+     "x": 0,
+     "y": 0.46,
+     "w": 0.49,
+     "em": "pelo menos dois agentes",
+     "papel": "corpo",
+     "tam": "corpo",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "texto",
+     "texto": "2  Três rodadas conectadas: ação → resposta → observação → adaptação",
+     "x": 0.51,
+     "y": 0.46,
+     "w": 0.49,
+     "em": "pelo menos três rodadas",
+     "papel": "corpo",
+     "tam": "corpo",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "texto",
+     "texto": "3  Um agente muda de comportamento pelo que aconteceu antes",
+     "x": 0,
+     "y": 0.62,
+     "w": 0.49,
+     "em": "pelo menos um agente mudando",
+     "papel": "corpo",
+     "tam": "corpo",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "texto",
+     "texto": "4  Evidências registradas de cada rodada",
+     "x": 0.51,
+     "y": 0.62,
+     "w": 0.49,
+     "em": "e evidências registradas",
+     "papel": "corpo",
+     "tam": "corpo",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "chip",
+     "texto": "NADA ROTEIRIZADO: A ADAPTAÇÃO TEM QUE SER REAL",
+     "x": 0,
+     "y": 0.82,
+     "em": "não vale uma sequência roteirizada",
+     "cor": "alerta"
+    }
+   ]
+  },
+  {
+   "de": "Escolhemos o pôquer porque ele",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Por que pôquer?",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Objetivos em conflito",
+     "texto": "Os dois disputam as mesmas fichas.",
+     "x": 0,
+     "y": 0.16,
+     "w": 0.31,
+     "h": 0.3,
+     "em": "disputam as mesmas fichas",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Informação parcial",
+     "texto": "Cada um vê só as próprias cartas.",
+     "x": 0.345,
+     "y": 0.16,
+     "w": 0.31,
+     "h": 0.3,
+     "em": "cada um vê só",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Toda aposta é um sinal",
+     "texto": "Pode ser verdade ou blefe.",
+     "x": 0.69,
+     "y": 0.16,
+     "w": 0.31,
+     "h": 0.3,
+     "em": "toda aposta é um sinal",
+     "borda": "primaria",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "texto",
+     "texto": "Texas Hold'em sem limite, um contra um, com as regras do Trabalho 1",
+     "x": 0,
+     "y": 0.56,
+     "w": 1,
+     "em": "Usamos o Texas",
+     "papel": "corpo",
+     "tam": "corpo",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "texto",
+     "texto": "A partida vai até um agente perder todas as fichas. Os blinds sobem a cada 8 mãos:",
+     "x": 0,
+     "y": 0.68,
+     "w": 1,
+     "em": "A partida vai até",
+     "papel": "corpo",
+     "tam": "corpo",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "chip",
+     "texto": "5/10",
+     "x": 0,
+     "y": 0.82,
+     "em": "os blinds sobem",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "10/20",
+     "x": 0.09,
+     "y": 0.82,
+     "em": "os blinds sobem",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "15/30",
+     "x": 0.19,
+     "y": 0.82,
+     "em": "a cada oito mãos",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "20/40 …",
+     "x": 0.29,
+     "y": 0.82,
+     "em": "para que o jogo",
+     "cor": "primaria"
+    }
+   ]
+  },
+  {
+   "de": "O sistema tem três partes",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "A arquitetura",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Motor do jogo",
+     "texto": "Única autoridade sobre cartas e fichas.",
+     "x": 0,
+     "y": 0.14,
+     "w": 0.3,
+     "h": 0.24,
+     "em": "A primeira é o motor",
+     "borda": "primaria",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "C1 · visão filtrada por agente",
+     "x": 0,
+     "y": 0.44,
+     "em": "recebe uma visão filtrada",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "C2 · validação antes de mudar fichas",
+     "x": 0,
+     "y": 0.54,
+     "em": "Toda ação é validada",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "C3 · VERSÃO: SEM REPETIÇÃO",
+     "x": 0,
+     "y": 0.64,
+     "em": "carrega uma versão do estado",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "C5 · soma das fichas sempre igual",
+     "x": 0,
+     "y": 0.74,
+     "em": "confere que a soma",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "seta",
+     "x": 0.31,
+     "y": 0.26,
+     "x2": 0.36,
+     "y2": 0.26,
+     "em": "A segunda parte são",
+     "cor": "texto_suave"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Agentes A e B",
+     "texto": "Decidem, observam e se adaptam.",
+     "x": 0.37,
+     "y": 0.14,
+     "w": 0.28,
+     "h": 0.24,
+     "em": "A segunda parte são",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "seta",
+     "x": 0.66,
+     "y": 0.26,
+     "x2": 0.71,
+     "y2": 0.26,
+     "em": "A terceira é a arena",
+     "cor": "texto_suave"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Arena + interface",
+     "texto": "Encadeia partidas, guarda a memória e transmite ao vivo.",
+     "x": 0.72,
+     "y": 0.14,
+     "w": 0.28,
+     "h": 0.24,
+     "em": "A terceira é a arena",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Testes: 9 de 9",
+     "texto": "O motor reproduz o cenário escrito à mão no Trabalho 1: 50 × 170 fichas, e os três finais de all-in.",
+     "x": 0.5,
+     "y": 0.46,
+     "w": 0.5,
+     "em": "testamos o motor",
+     "borda": "positivo",
+     "cor": "superficie"
+    }
+   ]
+  },
+  {
+   "de": "Cada agente é heurístico segue",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Como um agente decide",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "1 · Faixa do adversário",
+     "texto": "O que ele fez nesta mão + a taxa de blefe aprendida.",
+     "x": 0,
+     "y": 0.15,
+     "w": 0.3,
+     "h": 0.3,
+     "em": "Primeiro estima a faixa",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "seta",
+     "x": 0.31,
+     "y": 0.3,
+     "x2": 0.345,
+     "y2": 0.3,
+     "em": "Segundo calcula por simulação",
+     "cor": "texto_suave"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "2 · Equidade × pot odds",
+     "texto": "Chance de vencer contra a faixa × preço de pagar.",
+     "x": 0.355,
+     "y": 0.15,
+     "w": 0.3,
+     "h": 0.3,
+     "em": "Segundo calcula por simulação",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "seta",
+     "x": 0.665,
+     "y": 0.3,
+     "x2": 0.7,
+     "y2": 0.3,
+     "em": "Terceiro consulta a sua política",
+     "cor": "texto_suave"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "3 · Política → ação",
+     "texto": "Apostar, blefar, roubar, armar, pagar ou desistir.",
+     "x": 0.71,
+     "y": 0.15,
+     "w": 0.29,
+     "h": 0.3,
+     "em": "Terceiro consulta a sua política",
+     "borda": "primaria",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Exemplo real (decisão de A)",
+     "texto": "Equidade 24% contra a faixa de B (1 aposta, blefa ~36%), pot odds 29% → desiste.",
+     "x": 0,
+     "y": 0.55,
+     "w": 0.62,
+     "em": "para escolher a ação",
+     "cor": "superficie",
+     "cor_corpo": "texto"
+    },
+    {
+     "tipo": "chip",
+     "texto": "ABAIXO DE 12 BIG BLINDS: PUSH OU FOLD",
+     "x": 0,
+     "y": 0.84,
+     "em": "E existe um modo especial",
+     "cor": "alerta"
+    }
+   ]
+  },
+  {
+   "de": "A política é o estilo",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "A política: sete números",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Agressividade",
+     "texto": "aumentar com mão boa em vez de só pagar",
+     "x": 0,
+     "y": 0.13,
+     "w": 0.48,
+     "em": "Agressividade é a chance",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Frequência de blefe",
+     "texto": "apostar com mão fraca (< 45% de equidade)",
+     "x": 0,
+     "y": 0.33,
+     "w": 0.48,
+     "em": "Frequência de blefe é",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Roubo após check",
+     "texto": "apostar logo depois do check do adversário",
+     "x": 0,
+     "y": 0.53,
+     "w": 0.48,
+     "em": "Roubo após check é",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Armadilha",
+     "texto": "com mão muito forte (> 75%), só check ou call",
+     "x": 0,
+     "y": 0.7300000000000001,
+     "w": 0.48,
+     "em": "Armadilha é a chance",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Margem para pagar",
+     "texto": "quanto a equidade precisa superar as pot odds",
+     "x": 0.52,
+     "y": 0.13,
+     "w": 0.48,
+     "em": "Margem para pagar é",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Limiar de valor",
+     "texto": "equidade mínima para apostar por valor",
+     "x": 0.52,
+     "y": 0.33,
+     "w": 0.48,
+     "em": "Limiar de valor é",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Tamanho da aposta",
+     "texto": "fração do pote que costuma apostar",
+     "x": 0.52,
+     "y": 0.53,
+     "w": 0.48,
+     "em": "E tamanho da aposta",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "chip",
+     "texto": "AS REGRAS DE ADAPTAÇÃO MEXEM NESTES NÚMEROS",
+     "x": 0.52,
+     "y": 0.75,
+     "em": "São esses sete números",
+     "cor": "primaria"
+    }
+   ]
+  },
+  {
+   "de": "Um perfil é o ponto",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Os perfis: ponto de partida",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Pressionador · A",
+     "texto": "agressividade 70% · blefe 30% · roubo 50% · armadilha 5%",
+     "x": 0,
+     "y": 0.13,
+     "w": 0.24,
+     "h": 0.3,
+     "em": "O Pressionador testa",
+     "borda": "destaque",
+     "cor": "superficie",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Valor e Indução · B",
+     "texto": "agressividade 55% · blefe 8% · roubo 25% · armadilha 30%",
+     "x": 0.253,
+     "y": 0.13,
+     "w": 0.24,
+     "h": 0.3,
+     "em": "O Valor e Indução aposta",
+     "borda": "secundaria",
+     "cor": "superficie",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Conservador",
+     "texto": "agressividade 40% · blefe 4% · limiar de valor 66%",
+     "x": 0.506,
+     "y": 0.13,
+     "w": 0.24,
+     "h": 0.3,
+     "em": "O Conservador entra",
+     "cor": "superficie",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Equilibrado",
+     "texto": "agressividade 55% · blefe 15% · roubo 35% · armadilha 15%",
+     "x": 0.759,
+     "y": 0.13,
+     "w": 0.241,
+     "h": 0.3,
+     "em": "E o Equilibrado mistura",
+     "cor": "superficie",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "texto",
+     "texto": "Por que existem:",
+     "x": 0,
+     "y": 0.5,
+     "w": 0.3,
+     "em": "Os perfis tiveram que existir",
+     "papel": "titulo",
+     "tam": "h3",
+     "cor": "primaria",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "texto",
+     "texto": "1  Continuidade com o Trabalho 1",
+     "x": 0,
+     "y": 0.6,
+     "w": 0.5,
+     "em": "O primeiro é a continuidade",
+     "papel": "corpo",
+     "tam": "corpo",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "texto",
+     "texto": "2  Sem diferença, não há o que ler",
+     "x": 0,
+     "y": 0.69,
+     "w": 0.5,
+     "em": "O segundo é que sem diferença",
+     "papel": "corpo",
+     "tam": "corpo",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "texto",
+     "texto": "3  Experimentos trocando perfis",
+     "x": 0,
+     "y": 0.78,
+     "w": 0.5,
+     "em": "O terceiro é permitir",
+     "papel": "corpo",
+     "tam": "corpo",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Política efetiva",
+     "texto": "perfil + posturas das regras + ajustes do treinador",
+     "x": 0.52,
+     "y": 0.6,
+     "w": 0.48,
+     "em": "a política que vale é",
+     "borda": "primaria",
+     "cor": "superficie"
+    }
+   ]
+  },
+  {
+   "de": "Toda decisão recebe uma categoria",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Intenção privada, ação pública",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "chip",
+     "texto": "VALOR",
+     "x": 0.0,
+     "y": 0.15,
+     "em": "Valor apostar",
+     "cor": "positivo"
+    },
+    {
+     "tipo": "chip",
+     "texto": "BLEFE",
+     "x": 0.18,
+     "y": 0.15,
+     "em": "Blefe apostar",
+     "cor": "alerta"
+    },
+    {
+     "tipo": "chip",
+     "texto": "ROUBO",
+     "x": 0.36,
+     "y": 0.15,
+     "em": "Roubo apostar",
+     "cor": "alerta"
+    },
+    {
+     "tipo": "chip",
+     "texto": "ARMADILHA",
+     "x": 0.54,
+     "y": 0.15,
+     "em": "Armadilha dar check",
+     "cor": "feltro"
+    },
+    {
+     "tipo": "chip",
+     "texto": "PAGAR",
+     "x": 0.0,
+     "y": 0.28,
+     "em": "Pagar a equidade",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "CHECK",
+     "x": 0.18,
+     "y": 0.28,
+     "em": "Check mão média",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "DESISTIR",
+     "x": 0.36,
+     "y": 0.28,
+     "em": "Desistir a equidade",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "PRESSÃO",
+     "x": 0.54,
+     "y": 0.28,
+     "em": "E pressão o",
+     "cor": "negativo"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "O operador vê",
+     "texto": "intenção: blefe",
+     "x": 0,
+     "y": 0.48,
+     "w": 0.38,
+     "em": "O adversário vê apenas",
+     "borda": "primaria",
+     "cor": "superficie",
+     "cor_corpo": "alerta",
+     "tam_texto": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "O adversário vê",
+     "texto": "ação pública: bet 40",
+     "x": 0.44,
+     "y": 0.48,
+     "w": 0.38,
+     "em": "O adversário vê apenas",
+     "cor": "superficie",
+     "tam_texto": "h3",
+     "cor_corpo": "texto"
+    },
+    {
+     "tipo": "texto",
+     "texto": "Da dúvida nasce a leitura do adversário.",
+     "x": 0,
+     "y": 0.8,
+     "w": 1,
+     "em": "É dessa dúvida",
+     "papel": "titulo",
+     "tam": "h3",
+     "cor": "primaria",
+     "alinhar": "esquerda"
+    }
+   ]
+  },
+  {
+   "de": "Depois de cada ação pública",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "O que cada agente mede do outro",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "img",
+     "arquivo": "tela_leitura_tabela.png",
+     "x": 0,
+     "y": 0.12,
+     "w": 0.58,
+     "h": 0.7
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Duas memórias por medida",
+     "x": 0.6,
+     "y": 0.12,
+     "w": 0.4,
+     "em": "Cada medida tem duas memórias",
+     "borda": "primaria",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "LONGO PRAZO · ATRAVESSA PARTIDAS",
+     "x": 0.6,
+     "y": 0.3,
+     "em": "A de longo prazo",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "RECENTE · REAGE RÁPIDO",
+     "x": 0.6,
+     "y": 0.41,
+     "em": "A recente reage",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "DIVERGIRAM → \"MUDOU\"",
+     "x": 0.6,
+     "y": 0.52,
+     "em": "Quando as duas divergem",
+     "cor": "alerta"
+    }
+   ]
+  },
+  {
+   "de": "A adaptação vem de oito regras",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "As oito regras de adaptação",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Explorar desistências",
+     "texto": "desiste muito → blefe e roube mais",
+     "x": 0,
+     "y": 0.12,
+     "w": 0.49,
+     "em": "Explorar desistências se",
+     "cor": "superficie",
+     "tam_titulo": "h3",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Valor contra pagador",
+     "texto": "paga quase tudo → pare de blefar",
+     "x": 0,
+     "y": 0.28500000000000003,
+     "w": 0.49,
+     "em": "Valor contra pagador se",
+     "cor": "superficie",
+     "tam_titulo": "h3",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Pagar o blefador",
+     "texto": "mostra blefes → pague mais leve",
+     "x": 0,
+     "y": 0.45,
+     "w": 0.49,
+     "em": "Pagar o blefador se",
+     "cor": "superficie",
+     "tam_titulo": "h3",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Respeitar o passivo",
+     "texto": "quase nunca aposta → respeite a aposta",
+     "x": 0,
+     "y": 0.615,
+     "w": 0.49,
+     "em": "Respeitar o passivo se",
+     "cor": "superficie",
+     "tam_titulo": "h3",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Induzir o agressor",
+     "texto": "aposta demais → arme armadilhas",
+     "x": 0.51,
+     "y": 0.12,
+     "w": 0.49,
+     "em": "Induzir o agressor se",
+     "cor": "superficie",
+     "tam_titulo": "h3",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Evitar check-raise",
+     "texto": "dá check-raise → não aposte no automático",
+     "x": 0.51,
+     "y": 0.28500000000000003,
+     "w": 0.49,
+     "em": "Evitar check-raise se",
+     "cor": "superficie",
+     "tam_titulo": "h3",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Armadilha contra roubo",
+     "texto": "sempre aposta após o check → check com mão forte",
+     "x": 0.51,
+     "y": 0.45,
+     "w": 0.49,
+     "em": "Armadilha contra roubo se",
+     "cor": "superficie",
+     "tam_titulo": "h3",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Corrigir blefes",
+     "texto": "meus blefes falham → blefe menos",
+     "x": 0.51,
+     "y": 0.615,
+     "w": 0.49,
+     "em": "E corrigir blefes se",
+     "cor": "superficie",
+     "tam_titulo": "h3",
+     "tam_texto": "nota"
+    },
+    {
+     "tipo": "chip",
+     "texto": "TOLERÂNCIA + 6 MÃOS ENTRE MUDANÇAS",
+     "x": 0,
+     "y": 0.8,
+     "em": "As regras têm uma faixa",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "PREVISÃO ANTES DE CADA RESPOSTA → ACERTO MEDIDO",
+     "x": 0.42,
+     "y": 0.8,
+     "em": "o agente faz uma previsão",
+     "cor": "primaria"
+    }
+   ]
+  },
+  {
+   "de": "Existe ainda um treinador",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "O treinador Llama",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "chip",
+     "texto": "PARTIDA N",
+     "x": 0,
+     "y": 0.18,
+     "em": "Entre uma partida e outra",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "seta",
+     "x": 0.13,
+     "y": 0.21,
+     "x2": 0.2,
+     "y2": 0.21,
+     "em": "Entre uma partida e outra",
+     "cor": "texto_suave"
+    },
+    {
+     "tipo": "chip",
+     "texto": "LLAMA 3.1 · LOCAL",
+     "x": 0.21,
+     "y": 0.18,
+     "em": "Entre uma partida e outra",
+     "cor": "primaria"
+    },
+    {
+     "tipo": "seta",
+     "x": 0.38,
+     "y": 0.21,
+     "x2": 0.45,
+     "y2": 0.21,
+     "em": "sugere até três",
+     "cor": "texto_suave"
+    },
+    {
+     "tipo": "chip",
+     "texto": "PARTIDA N+1 · NOVA POLÍTICA BASE",
+     "x": 0.46,
+     "y": 0.18,
+     "em": "sugere até três",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Justificativa real (treinador de A, partida 22)",
+     "texto": "“Ajustes feitos para explorar melhor o oponente, aumentando a agressividade para pressioná-lo, reduzindo a frequência de blefe […] e aumentando a frequência de armadilha.”",
+     "x": 0,
+     "y": 0.34,
+     "w": 0.62,
+     "em": "pequenos ajustes na política base",
+     "cor": "superficie",
+     "cor_corpo": "texto"
+    },
+    {
+     "tipo": "chip",
+     "texto": "DESCARTA PARÂMETRO INVENTADO",
+     "x": 0.66,
+     "y": 0.34,
+     "em": "O sistema trata essa resposta",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "NO MÁXIMO 3 AJUSTES",
+     "x": 0.66,
+     "y": 0.45,
+     "em": "descarta parâmetros inventados",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "±10 PONTOS POR AJUSTE",
+     "x": 0.66,
+     "y": 0.56,
+     "em": "limita cada ajuste",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "texto",
+     "texto": "Não é rede neural: o aprendizado está nas estatísticas, nas regras e nesses ajustes.",
+     "x": 0,
+     "y": 0.8,
+     "w": 1,
+     "em": "não é treinamento de rede neural",
+     "papel": "titulo",
+     "tam": "h3",
+     "cor": "primaria",
+     "alinhar": "esquerda"
+    }
+   ]
+  },
+  {
+   "de": "Esta é a arena funcionando",
+   "janela": {
+    "rotulo": "ARENA AO VIVO · GRAVAÇÃO REAL DO PROTÓTIPO"
+   },
+   "itens": []
+  },
+  {
+   "de": "Algumas decisões moldaram o projeto",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Decisões que tomamos",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Regras explícitas, não um LLM em cada jogada",
+     "texto": "explicável, rápido e reproduzível",
+     "x": 0,
+     "y": 0.12,
+     "w": 0.49,
+     "em": "Agentes por regras",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Partidas completas + memória entre partidas",
+     "texto": "o aprendizado de uma partida chega às próximas",
+     "x": 0,
+     "y": 0.39,
+     "w": 0.49,
+     "em": "Partidas completas com blinds",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Equidade contra a faixa do adversário",
+     "texto": "antes: pagava all-in com um par de 9",
+     "x": 0,
+     "y": 0.66,
+     "w": 0.49,
+     "em": "A primeira versão pagava",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Regras com tolerância",
+     "texto": "antes: ligavam e desligavam a cada mão",
+     "x": 0.51,
+     "y": 0.12,
+     "w": 0.49,
+     "em": "As regras oscilavam",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Causa só no mesmo sentido observado",
+     "texto": "o narrador não liga mudanças contraditórias",
+     "x": 0.51,
+     "y": 0.39,
+     "w": 0.49,
+     "em": "E o narrador só aceita",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Ataques T1–T3 fora do escopo",
+     "texto": "decisão do grupo",
+     "x": 0.51,
+     "y": 0.66,
+     "w": 0.49,
+     "em": "A demonstração de ataques",
+     "cor": "superficie",
+     "tam_titulo": "h3"
+    }
+   ]
+  },
+  {
+   "de": "Agora os resultados Primeiro o",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Resultado 1 · uma cadeia de reações (partida 1)",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "texto",
+     "texto": "A",
+     "x": 0,
+     "y": 0.2,
+     "w": 0.04,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "destaque",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "texto",
+     "texto": "B",
+     "x": 0,
+     "y": 0.55,
+     "w": 0.04,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "secundaria",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "B · mão 7",
+     "texto": "vê A apostar 60% após o check → armadilha 30% → 50%",
+     "x": 0.05,
+     "y": 0.5,
+     "w": 0.3,
+     "em": "Na mão sete da primeira",
+     "borda": "secundaria",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "seta",
+     "x": 0.36,
+     "y": 0.58,
+     "x2": 0.4,
+     "y2": 0.32,
+     "em": "Na mão seguinte A percebeu",
+     "cor": "secundaria"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "A · mão 8",
+     "texto": "vê B mais passivo → rouba mais potes (50% → 60%)",
+     "x": 0.4,
+     "y": 0.15,
+     "w": 0.3,
+     "em": "Na mão seguinte A percebeu",
+     "borda": "destaque",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "seta",
+     "x": 0.71,
+     "y": 0.32,
+     "x2": 0.74,
+     "y2": 0.58,
+     "em": "E B respondeu induzindo",
+     "cor": "destaque"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "B · mão 8",
+     "texto": "induz o agressor → armadilha 75%",
+     "x": 0.7,
+     "y": 0.5,
+     "w": 0.3,
+     "em": "E B respondeu induzindo",
+     "borda": "secundaria",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "CADEIA DE REAÇÕES · UMA PEQUENA CORRIDA ARMAMENTISTA",
+     "x": 0,
+     "y": 0.84,
+     "em": "É uma cadeia de reações",
+     "cor": "primaria"
+    }
+   ]
+  },
+  {
+   "de": "Ao longo das partidas os estilos",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Resultado 2 · os estilos se transformaram (68 partidas)",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "B virou um armador",
+     "texto": "armadilha 30% → 80%\nblefe 8% → 0% (nenhum blefe desde a partida 18)\ndesiste diante de só 13–19% das apostas",
+     "x": 0,
+     "y": 0.14,
+     "w": 0.48,
+     "em": "B virou um armador",
+     "borda": "secundaria",
+     "cor": "superficie",
+     "cor_corpo": "texto"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "A deixou de blefar",
+     "texto": "blefe 30% → quase 0% (já nas partidas 2 a 4)\ncontinua agressivo: 64–72% de agressão\npassou a apostar por valor",
+     "x": 0.52,
+     "y": 0.14,
+     "w": 0.48,
+     "em": "A que começou com trinta",
+     "borda": "destaque",
+     "cor": "superficie",
+     "cor_corpo": "texto"
+    },
+    {
+     "tipo": "texto",
+     "texto": "Cada um explora o estilo do outro: A não blefa contra quem paga; B não aposta contra quem é agressivo.",
+     "x": 0,
+     "y": 0.7,
+     "w": 1,
+     "em": "Ele continuou agressivo",
+     "papel": "titulo",
+     "tam": "h3",
+     "cor": "primaria",
+     "alinhar": "esquerda"
+    }
+   ]
+  },
+  {
+   "de": "Segundo a memória",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Resultado 3 · memória entre partidas (experimento, 20 partidas cada)",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "linhas",
+     "x": 0.04,
+     "y": 0.16,
+     "w": 0.56,
+     "h": 0.56,
+     "eixo_x": [
+      "P1–5",
+      "P6–10",
+      "P11–15",
+      "P16–20"
+     ],
+     "ymin": 30,
+     "ymax": 100,
+     "sufixo": "%",
+     "series": [
+      {
+       "rotulo": "conhecimento, com memória",
+       "cor": "primaria",
+       "pontos": [
+        65,
+        83,
+        87,
+        88
+       ]
+      },
+      {
+       "rotulo": "acerto de A, com memória",
+       "cor": "destaque",
+       "pontos": [
+        76,
+        80,
+        87,
+        90
+       ],
+       "tracejado": true,
+       "desloc": -0.05
+      },
+      {
+       "rotulo": "conhecimento, sem memória",
+       "cor": "texto_suave",
+       "pontos": [
+        43,
+        48,
+        55,
+        40
+       ]
+      }
+     ],
+     "em": "Com memória entre as partidas"
+    },
+    {
+     "tipo": "chip",
+     "texto": "COM MEMÓRIA: PARAM DE SE ADAPTAR APÓS A PARTIDA 10",
+     "x": 0,
+     "y": 0.8,
+     "em": "com memória os agentes convergem",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "SEM MEMÓRIA: 85 ADAPTAÇÕES × 12 · A ESCALADA RECOMEÇA",
+     "x": 0,
+     "y": 0.9,
+     "em": "Sem memória reaprendem",
+     "cor": "alerta"
+    }
+   ]
+  },
+  {
+   "de": "Terceiro o treinador",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Resultado 4 · o treinador reabriu a disputa (68 partidas)",
+     "x": 0,
+     "y": 0.0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "texto",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "chip",
+     "texto": "O LLAMA AJUSTOU A 4 VEZES (PARTIDAS 22, 32, 48 E 50)",
+     "x": 0,
+     "y": 0.14,
+     "em": "ele ajustou A quatro vezes",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "PARTIDAS 37–40: NOVA ESCALADA, 15 ADAPTAÇÕES",
+     "x": 0,
+     "y": 0.27,
+     "em": "nas partidas trinta e sete",
+     "cor": "primaria"
+    },
+    {
+     "tipo": "barra",
+     "rotulo": "A vence antes do treinador (P1–22)",
+     "valor": 41,
+     "max": 100,
+     "cor": "destaque",
+     "x": 0,
+     "y": 0.45,
+     "w": 0.8,
+     "em": "que vencia quarenta e um"
+    },
+    {
+     "tipo": "barra",
+     "rotulo": "A vence depois (P23–68)",
+     "valor": 65,
+     "max": 100,
+     "cor": "destaque",
+     "x": 0,
+     "y": 0.63,
+     "w": 0.8,
+     "em": "passou a vencer sessenta"
+    },
+    {
+     "tipo": "texto",
+     "texto": "Correlação de uma única execução, não prova de causa.",
+     "x": 0,
+     "y": 0.84,
+     "w": 1,
+     "em": "passou a vencer sessenta",
+     "papel": "corpo",
+     "tam": "nota",
+     "cor": "texto_suave",
+     "alinhar": "esquerda"
+    }
+   ]
+  },
+  {
+   "de": "Então como as decisões de",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Como as decisões de um agente influenciam o adversário?",
+     "x": 0,
+     "y": 0,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h2",
+     "cor": "primaria",
+     "alinhar": "esquerda"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Pelo que ele mostra em público",
+     "texto": "Cada ação vira estatística na memória do outro; cruzou o limite, o outro muda a política (~6 mãos depois).",
+     "x": 0,
+     "y": 0.16,
+     "w": 0.32,
+     "h": 0.42,
+     "em": "Pelo que ele mostra",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Influência mútua e encadeada",
+     "texto": "Uma mudança provoca uma resposta, que provoca outra.",
+     "x": 0.34,
+     "y": 0.16,
+     "w": 0.32,
+     "h": 0.42,
+     "em": "A influência é mútua",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "caixa",
+     "titulo": "Memória ensina e estabiliza",
+     "texto": "Com memória, conhecem e preveem melhor, mas convergem; algo novo reabre a disputa.",
+     "x": 0.68,
+     "y": 0.16,
+     "w": 0.32,
+     "h": 0.42,
+     "em": "A memória faz os agentes",
+     "borda": "primaria",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "REGRAS E LIMITES ESCOLHIDOS À MÃO",
+     "x": 0,
+     "y": 0.68,
+     "em": "Também temos limites claros",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "FAIXA SIMPLES",
+     "x": 0.36,
+     "y": 0.68,
+     "em": "a faixa do adversário",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "CAUSALIDADE RASTREÁVEL, NÃO PROVA",
+     "x": 0.53,
+     "y": 0.68,
+     "em": "a causalidade da narrativa",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "UMA SEQUÊNCIA DE CARTAS",
+     "x": 0,
+     "y": 0.8,
+     "em": "os números vêm de uma única",
+     "cor": "superficie"
+    },
+    {
+     "tipo": "chip",
+     "texto": "PRÓXIMOS: VÁRIAS SEQUÊNCIAS · EXPLORAÇÃO · C4 E ATAQUES",
+     "x": 0.3,
+     "y": 0.8,
+     "em": "Os próximos passos seriam",
+     "cor": "primaria"
+    }
+   ]
+  },
+  {
+   "de": "Todo o código os testes",
+   "itens": [
+    {
+     "tipo": "texto",
+     "texto": "Arena Adversarial",
+     "x": 0,
+     "y": 0.05,
+     "w": 1,
+     "papel": "titulo",
+     "tam": "h1",
+     "cor": "texto",
+     "alinhar": "centro"
+    },
+    {
+     "tipo": "texto",
+     "texto": "Trabalho 2 · Engenharia de Software Adversarial · Grupo 7",
+     "x": 0,
+     "y": 0.25,
+     "w": 1,
+     "papel": "corpo",
+     "tam": "h3",
+     "cor": "primaria",
+     "alinhar": "centro"
+    },
+    {
+     "tipo": "texto",
+     "texto": "Rafael Barboza Torres · Elton Henrique Lunardi Gimenes · Frederico Marques da Silva Barcelos · Diego Santos de Araujo",
+     "x": 0.05,
+     "y": 0.42,
+     "w": 0.9,
+     "papel": "corpo",
+     "tam": "corpo",
+     "cor": "texto",
+     "alinhar": "centro"
+    },
+    {
+     "tipo": "texto",
+     "texto": "Código, testes, relatórios e evidências no repositório do projeto (poker-arena)",
+     "x": 0,
+     "y": 0.62,
+     "w": 1,
+     "papel": "corpo",
+     "tam": "nota",
+     "cor": "texto_suave",
+     "alinhar": "centro"
+    }
+   ]
+  }
+ ]
+}

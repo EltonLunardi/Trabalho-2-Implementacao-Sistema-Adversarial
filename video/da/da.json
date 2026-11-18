@@ -1,0 +1,283 @@
+{
+  "versao_esquema": 1,
+  "herda": null,
+  "projeto": {
+    "nome": "Arena Adversarial — Trabalho 2",
+    "slug": "arena-adversarial-trabalho-2",
+    "criada_em": "2026-11-17T22:42:43-03:00",
+    "revisao": 1,
+    "aprovada": true,
+    "aprovada_em": "2026-11-17T22:55:28-03:00",
+    "aprovada_sha256": "c301eea964528c06970d5e1e9b67402d48e55a99acd46f7159782ad00484bf08",
+    "base": "lab-ia"
+  },
+  "conceito": {
+    "frase": "A Arena em movimento: interface escura de cliente de pôquer, feltro verde, dourado de destaque; A em coral, B em azul — cada tela explica uma peça do sistema adversarial.",
+    "palavras_chave": ["acadêmico", "claro", "interface de pôquer", "causa e efeito", "dados reais"],
+    "referencias": [
+      {
+        "arquivo": "referencias/arena_mesa.png",
+        "nota": "A própria Arena: fundo ardósia, mesa de feltro, dourado de destaque, A coral e B azul. O vídeo e o protótipo devem parecer uma coisa só."
+      }
+    ],
+    "faca": [
+      "Coral é sempre o agente A e azul é sempre o agente B, em qualquer tela.",
+      "Dourado marca o que está sendo explicado agora (a palavra da legenda, o número em foco).",
+      "Mostrar a Arena real gravada sempre que o assunto for o protótipo; animação só para conceito.",
+      "Números com a fonte citada (relatório da partida, experimento) e unidade escrita.",
+      "Uma ideia por tela; diagramas crescem na ordem em que o dado flui."
+    ],
+    "nao_faca": [
+      "Inventar resultado ou número que não está nos relatórios.",
+      "Usar coral ou azul para outra coisa que não A e B.",
+      "Fichas, cartas ou feltro como enfeite em tela que não fala do jogo.",
+      "Animação elástica ou que quica.",
+      "Parágrafo longo na tela: quebrar em rótulos e passos."
+    ]
+  },
+  "formatos": {
+    "horizontal": {"largura": 1920, "altura": 1080, "fps": "30000/1001"},
+    "vertical": {"largura": 1080, "altura": 1920, "fps": "30000/1001"},
+    "quadrado": {"largura": 1080, "altura": 1080, "fps": "30000/1001"},
+    "thumbnail": {"largura": 1280, "altura": 720},
+    "margens_seguras": {
+      "horizontal": {"padrao": [0.05, 0.05, 0.05, 0.05]},
+      "vertical": {
+        "instagram": [0.14, 0.21, 0.35, 0.06],
+        "tiktok": [0.125, 0.2778, 0.3438, 0.1111],
+        "shorts": [0.15, 0.1778, 0.35, 0.0444],
+        "uniao": [0.15, 0.2778, 0.35, 0.1111]
+      },
+      "quadrado": {"padrao": [0.05, 0.05, 0.05, 0.05]}
+    }
+  },
+  "cor": {
+    "paleta": {
+      "fundo": "#0D1117",
+      "superficie": "#161B23",
+      "texto": "#E9EDF2",
+      "texto_suave": "#8A95A5",
+      "primaria": "#E5B94E",
+      "secundaria": "#4EA8FF",
+      "destaque": "#FF6F61",
+      "positivo": "#3FB97A",
+      "negativo": "#EF5350",
+      "alerta": "#F2994A",
+      "feltro": "#1F8A63",
+      "feltro_medio": "#0F5A40",
+      "feltro_escuro": "#093A29"
+    },
+    "neutros": ["#000000", "#FFFFFF"],
+    "dados": ["primaria", "secundaria", "destaque", "positivo", "alerta", "texto_suave", "texto"],
+    "gradientes": {
+      "profundidade": {
+        "tipo": "linear",
+        "angulo": 180,
+        "paradas": [["superficie", 0], ["fundo", 1]]
+      },
+      "feltro": {
+        "tipo": "radial",
+        "angulo": 0,
+        "paradas": [["feltro", 0], ["feltro_medio", 0.55], ["feltro_escuro", 1]]
+      }
+    }
+  },
+  "tipografia": {
+    "papeis": {
+      "titulo": {
+        "familia": "Roboto",
+        "arquivo": "fontes/Roboto-Variable.ttf",
+        "peso": 700,
+        "largura": 82,
+        "estilo": "normal",
+        "caixa": "normal",
+        "tracking": -0.012,
+        "altura_linha": 1.06,
+        "eixos": {"wght": 700, "wdth": 82}
+      },
+      "subtitulo": {
+        "familia": "Fira Code",
+        "arquivo": "fontes/FiraCode-Variable.ttf",
+        "peso": 500,
+        "largura": null,
+        "estilo": "normal",
+        "caixa": "alta",
+        "tracking": 0.08,
+        "altura_linha": 1.35,
+        "eixos": {"wght": 500}
+      },
+      "corpo": {
+        "familia": "Roboto",
+        "arquivo": "fontes/Roboto-Variable.ttf",
+        "peso": 400,
+        "largura": 100,
+        "estilo": "normal",
+        "caixa": "normal",
+        "tracking": 0.0,
+        "altura_linha": 1.42,
+        "eixos": {"wght": 400, "wdth": 100}
+      },
+      "dados": {
+        "familia": "Fira Code",
+        "arquivo": "fontes/FiraCode-Variable.ttf",
+        "peso": 500,
+        "largura": null,
+        "estilo": "normal",
+        "caixa": "normal",
+        "tracking": 0.0,
+        "altura_linha": 1.25,
+        "eixos": {"wght": 500}
+      },
+      "legenda": {
+        "familia": "Roboto",
+        "arquivo": "fontes/Roboto-Variable.ttf",
+        "peso": 800,
+        "largura": 88,
+        "estilo": "normal",
+        "caixa": "normal",
+        "tracking": -0.005,
+        "altura_linha": 1.12,
+        "eixos": {"wght": 800, "wdth": 88}
+      }
+    },
+    "escala": {"display": 0.12, "h1": 0.078, "h2": 0.054, "h3": 0.039, "corpo": 0.03, "nota": 0.022}
+  },
+  "layout": {
+    "grade": {"colunas": 12, "margem": 0.06, "calha": 0.012},
+    "raio": 0.008,
+    "traco": 0.0028,
+    "sombra": null,
+    "densidade": "media"
+  },
+  "movimento": {
+    "curvas": {
+      "entrada": [0.16, 1, 0.3, 1],
+      "saida": [0.7, 0, 0.84, 0],
+      "enfase": [0.2, 0, 0, 1],
+      "suave": [0.65, 0, 0.35, 1],
+      "linear": [0, 0, 1, 1]
+    },
+    "duracoes": {"micro": 0.08, "curta": 0.2, "media": 0.36, "longa": 0.7},
+    "escalonamento": 0.04,
+    "entrada_padrao": "digita",
+    "saida_padrao": "fade",
+    "transicoes": {"padrao": "corte", "permitidas": ["corte", "mascara", "fade"]},
+    "principios": [
+      "Movimento de interface: rápido para chegar, exato para parar",
+      "Texto técnico digita; forma geométrica desenha o traço",
+      "Diagramas crescem na direção do fluxo do dado",
+      "Sem elasticidade: nada passa do ponto"
+    ]
+  },
+  "tratamento": {
+    "grade": {
+      "lut": null,
+      "intensidade_lut": 1.0,
+      "exposicao": 0.0,
+      "contraste": 1.0,
+      "saturacao": 1.0,
+      "gama": 1.0,
+      "temperatura": 0,
+      "matiz": 0,
+      "curva": null
+    },
+    "duotone": {"ativo": false, "sombra": "fundo", "luz": "primaria", "mistura": 0.35},
+    "grao": {"ativo": false, "intensidade": 3, "temporal": true},
+    "vinheta": {"ativo": false, "angulo": 0.45},
+    "nitidez": 0.0,
+    "desfoque": 0.0,
+    "velocidade": 1.0,
+    "moldura": {
+      "estilo": "janela",
+      "espessura": 0.0028,
+      "cor": "texto_suave",
+      "raio": 0.012,
+      "margem": 0.06,
+      "rotulo": true
+    },
+    "recorte": {"ancora": "centro"}
+  },
+  "legenda": {
+    "estilo": "karaoke",
+    "papel": "legenda",
+    "tamanho": 0.052,
+    "caixa": "normal",
+    "cor": "texto",
+    "cor_destaque": "primaria",
+    "cor_falada": "texto_suave",
+    "contorno": null,
+    "sombra": null,
+    "fundo": {"cor": "fundo", "alfa": 0.84, "raio": 0.22, "respiro": [0.4, 0.2]},
+    "posicao": {
+      "vertical": {"y": 0.6, "largura_max": 0.61},
+      "horizontal": {"y": 0.86}
+    },
+    "largura_max": 0.78,
+    "max_linhas": 2,
+    "max_palavras": 5,
+    "animacao": "fade",
+    "reservar_em": ["vertical", "quadrado", "horizontal"]
+  },
+  "graficos": {
+    "gc": {
+      "estilo": "linha",
+      "posicao": "inferior_esquerda",
+      "papel_nome": "titulo",
+      "papel_cargo": "dados",
+      "tamanho_nome": 0.036,
+      "tamanho_cargo": 0.026,
+      "cor_nome": "texto",
+      "cor_cargo": "primaria",
+      "cor_fundo": "superficie",
+      "alfa_fundo": 0.9,
+      "cor_acento": "primaria"
+    },
+    "tarja": {
+      "estilo": "contorno",
+      "papel": "subtitulo",
+      "tamanho": 0.026,
+      "cor_fundo": "primaria",
+      "cor_texto": "texto",
+      "inclinacao": 0
+    },
+    "icones": {"estilo": "traco", "espessura": 0.0028},
+    "dados": {"eixo": "texto_suave", "grade": "superficie", "rotulo": "dados"},
+    "citacao_fonte": {
+      "papel": "dados",
+      "tamanho": 0.024,
+      "posicao": "inferior_direita",
+      "cor": "texto_suave"
+    }
+  },
+  "thumbnail": {
+    "max_palavras": 4,
+    "papel": "titulo",
+    "tamanho": 0.17,
+    "cor": "texto",
+    "cor_destaque": "primaria",
+    "contorno": null,
+    "tratamento_foto": {
+      "saturacao": 0.9,
+      "contraste": 1.15,
+      "recorte_pessoa": true,
+      "contorno_pessoa": {"cor": "primaria", "espessura": 0.008}
+    },
+    "fundo": "gradiente:profundidade",
+    "zona_proibida": "inferior_direita"
+  },
+  "som": {
+    "identidade": "Sintético e limpo: texturas eletrônicas discretas, cliques de interface e graves controlados.",
+    "loudness": {
+      "longo": {"lufs": -14, "pico_real": -1.0},
+      "curto": {"lufs": -14, "pico_real": -1.0}
+    },
+    "sfx": {"entrada": "blip", "enfase": "impacto", "texto": "tick"},
+    "musica": {"clima": "eletrônica ambiente, arpejos lentos, sem bateria pesada", "bpm": [90, 110]}
+  },
+  "marca": {
+    "logo": null,
+    "assinatura": null,
+    "posicao_logo": "superior_direita",
+    "marca_dagua": false
+  }
+}

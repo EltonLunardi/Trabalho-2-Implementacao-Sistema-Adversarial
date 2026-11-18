@@ -1,0 +1,29 @@
+{
+  "name": "poker-arena",
+  "version": "1.0.0",
+  "description": "Poker Adversarial — arena ao vivo com dois agentes heurísticos adaptativos (Trabalho 2, ESOF Adversarial)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/server/server.ts",
+    "dev": "tsx watch src/server/server.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "simular": "tsx scripts/simular.ts",
+    "experimento": "tsx scripts/experimento.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chart.js": "^4.6.1",
+    "express": "^4.22.3",
+    "marked": "^12.0.2",
+    "ws": "^8.23.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/node": "^22.20.5",
+    "@types/ws": "^8.18.2",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
